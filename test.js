@@ -1,0 +1,1 @@
+const express = require("express");const app = express();app.use(express.json());app.get("/", (req, res) => {  //IP-V3: 127.0.0.1  //IP-V4: ::1  console.log(req.ip)  res.send(req.ip);})app.listen(8080, () => console.log("server started...")); 
